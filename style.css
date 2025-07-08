@@ -1,7 +1,13 @@
-/* body {
-    width: 1200px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    body {
+    max-width:1600px;
+    height: 837px;
     margin: auto;
-} */
+}
 .open-sans-normal {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -10,19 +16,43 @@
     "wdth" 100;
 }
 /* shared style */
+.secondary-bg {
+    background-color: #FFF8F3;
+}
 .text-primary {
     color: #FD6E0A;
 }
 .btn-primary {
     border: none;
     background-color: #FD6E0A;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    padding: 18px 35px;
+    padding: 14px 30px;
     color: white;
     border-radius: 5px;
 }
+.btn1 {
+    margin-right: 25px;
+
+}
+.btn2 {
+    border: 1px solid #FD6E0A;
+    color: #FD6E0A;
+    background: rgba(255, 255, 255, 0);
+
+}
+.section-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+}
+.section-description {
+    font-size: 18px;
+    color: #757575;
+}
 .header {
+    margin-bottom: 130px;
+    background-color: #FFF8F3;
     background-image: url(images/developer.png), url(images/header_bg.png);
     background-repeat: no-repeat;
     background-position: top left, bottom right;
@@ -36,7 +66,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 50px 200px;
+    margin: 20px 200px;
 }
 nav ul{
     display: flex;
@@ -56,6 +86,7 @@ nav ul li a{
 /* banner style */
 .banner{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin: 0 35px 0 200px;
 }
@@ -65,12 +96,52 @@ nav ul li a{
 .banner-greetings {
     font-size: 45px;
     font-weight: 600;
+    margin-bottom: 5px;
 }
 .banner-title {
-    font-size: 88px;
-    font-weight: 800;
-
+    margin-bottom: 20px;
+    font-size: 85px;
+    font-weight: bold;
+}
+.banner-description {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 .banner-profile-pic{
     width: 580px;
+}
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* about style */
+.about {
+    position: relative;
+    width: 1140px;
+    height: 550px;
+    border-radius: 10px;
+    text-align: center;
+}
+.about-section {
+    background: white;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border: 1px solid black;
+    width: 827px;
+    height: 288px;
+}
+.about-items {
+    
+    display: flex;
+    justify-content: space-between;
+}
+.item-description {
+    font-weight: 600;
+}
+.section-description {
+    margin: 30px 0;
+    line-height: 30px;
 }

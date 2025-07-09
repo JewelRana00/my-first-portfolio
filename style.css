@@ -251,7 +251,13 @@ footer {
     padding: 130px 230px;
 }
 .info-title {
+    font-size: 25px;
+    font-weight: bold;
     margin-bottom: 25px;
+}
+.form-info{
+    font-size: 25px;
+    font-weight: bold;
 }
 .info-description {
     margin-bottom: 25px;

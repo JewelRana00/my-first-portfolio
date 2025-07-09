@@ -258,6 +258,7 @@ footer {
     line-height: 28px;
 }
 .s-icon {
+    cursor: pointer;
     padding: 8px 20px;
     /* border: 1px solid rgb(223, 223, 223); */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);

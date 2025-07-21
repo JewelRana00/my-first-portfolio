@@ -60,7 +60,6 @@
     color: #757575;
 }
 .header {
-    /* margin-bottom: 530px; */
     background-color: #FFF8F3;
     background-image: url(images/developer.png), url(images/header_bg.png);
     background-repeat: no-repeat;
@@ -238,7 +237,6 @@ main section {
 }
 .contact-section {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     gap: 100px;
 }
@@ -294,30 +292,110 @@ footer input[type="text"], footer input[type="email"] {
 .btn5 {
     cursor: pointer;
 }
+
+
+/* Small Device */
+
 @media screen and (max-width:576px) {
-    .skills-container {
+    .skills-container,
+    .resume-container,
+    .about-items,
+    .banner,
+    nav,
+    nav ul {
     flex-direction: column;
 }
-.skills {
-    margin: 5px;
+nav {
+    margin: 0 10px;
+    padding: 35px 0 35px;
 }
- .resume-container {
-flex-direction: column;
+.nav-title{
+    font-weight: 800;
+    font-size: 45px;
 }
-.experience {
-    margin: 0;
+nav ul li {
+    margin: 10px 0;
+}
+nav ul li:last-child {
+    margin-top: 25px;
+}
+.header {
+    background-color: #FFF8F3;
+    background-image: none;
+}
+.banner{
+    margin: 10px;
+    text-align: center;
+}
+.banner-greetings {
+    font-size: 30px;
+}
+.banner-title {
+    font-size: 45px;
+}
+.btn1 {
+    display: block;
+    margin: 15px auto;
+
+}
+.banner-profile-pic {
+    padding-top: 40px;
+    width: 100%;
+    right: 0;
+}
+main section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.section-description {
+    padding: 0 20px;
+    text-align: justify;
 }
 .resume-column {
-    text-align: center;
     padding: 20px;
-    
-}
-.resume-container hr{
-    width: 85%;
-    text-align: center;
-    margin: 0 auto 30px auto;
 }
 .experience-description {
-    padding: 0 0 0 0;
+    padding: 0;
 }
+.contact-section{
+    flex-direction: column-reverse;
+}
+.contact-form,
+.contact-info {
+    width: 100%;
+    text-align: center;
+}
+footer {
+    padding: 20px;
+}
+.about {
+    width: 100%;
+    height: auto;
+}
+.about-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    transform: none;
+    top: auto;
+    left: auto;
+    padding: 0;
+    margin: 0 auto;
+    box-shadow: none;
+    border-bottom: 2px solid #ddd;
+}
+
+.about-items {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
 }

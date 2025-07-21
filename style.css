@@ -3,16 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* body {
-    max-width:1600px;
-    margin: auto;
-} */
+ .hide {
+    display: none;
+ }
 .open-sans-normal {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:
-    "wdth" 100;
+    "width" 100;
 }
 /* shared style */
 .text-center {
@@ -49,6 +48,7 @@
     color: black;
 }
 .section-title {
+    margin: 0 auto;
     margin-bottom: 30px;
     font-size: 35px;
     font-weight: bold;
@@ -118,15 +118,11 @@ nav ul li a{
     font-size: 18px;
     margin-bottom: 20px;
 }
-/* .banner-profile-pic {
-  width: 500px;
-  transform: translateX(35px);
-} */
 .banner-profile-pic {
-padding-top: 150px;
-  width: 400px;
-  position: relative;
-  right: -35px; /* Pushes it to the right */
+    padding-top: 150px;
+    width: 400px;
+    position: relative;
+    right: -35px; /* Pushes it to the right */
 }
 main {
     max-width: 1140px;
@@ -154,7 +150,6 @@ main section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* border: 1px solid black; */
     border-radius: 5px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
 }
@@ -170,7 +165,10 @@ main section {
     line-height: 30px;
 }
 
-/* what is do section start */
+/* what I do section start */
+.skills{
+    margin: 0 auto;
+}
 .skills-container {
     display: flex;
     gap: 24px;
@@ -183,9 +181,10 @@ main section {
 .skill img{
     padding-bottom: 20px;
 }
-.skill .skill-title{
+.skill-title{
     padding-bottom: 20px;
 }
+
 /* A summary of My Resume */
 .resume-container {
     display: flex;
@@ -194,7 +193,7 @@ main section {
 }
 .resume-title {
     text-align: center;
-    margin-bottom: 113px;
+    margin-bottom: 80px;
     font-size: 35px;
     font-weight: bold;
 }
@@ -234,8 +233,8 @@ main section {
 }
 .btn3 {
     cursor: pointer;
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 .contact-section {
     display: flex;
@@ -294,4 +293,29 @@ footer input[type="text"], footer input[type="email"] {
 }
 .btn5 {
     cursor: pointer;
+}
+@media screen and (max-width:576px) {
+    .skills-container {
+    flex-direction: column;
+}
+.skills {
+    margin: 5px;
+}
+ .resume-container {
+flex-direction: column;
+}
+.experience {
+    margin: 0;
+}
+.resume-column {
+    text-align: center;
+    padding: 20px;
+    
+}
+.resume-container hr{
+    width: 85%;
+}
+.experience-description {
+    padding: 0 0 0 0;
+}
 }

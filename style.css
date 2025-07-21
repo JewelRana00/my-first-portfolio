@@ -314,6 +314,8 @@ flex-direction: column;
 }
 .resume-container hr{
     width: 85%;
+    text-align: center;
+    margin: 0 auto 30px auto;
 }
 .experience-description {
     padding: 0 0 0 0;
